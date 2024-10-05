@@ -1,0 +1,1284 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const FigmaToCodeApp());
+}
+
+class FigmaToCodeApp extends StatelessWidget {
+  const FigmaToCodeApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      theme: ThemeData.dark().copyWith(
+        scaffoldBackgroundColor: const Color.fromARGB(255, 18, 32, 47),
+
+      ),
+      home: Scaffold(
+        body: ListView(children: [
+          AndroidSmall1(),
+        ]),
+      ),
+    );
+  }
+}
+
+class AndroidSmall1 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Container(
+          width: 360,
+          height: 640,
+          padding: const EdgeInsets.only(
+            top: 157,
+            left: 25,
+            right: 24,
+            bottom: 157,
+          ),
+          clipBehavior: Clip.antiAlias,
+          decoration: const BoxDecoration(color: Color(0xFFECD78B)),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                width: 311,
+                height: 326,
+                decoration: const BoxDecoration(
+                  image: DecorationImage(
+                    image: NetworkImage("https://via.placeholder.com/311x326"),
+                    fit: BoxFit.fill,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+Container(
+          width: 360,
+          height: 640,
+          clipBehavior: Clip.antiAlias,
+          decoration: const BoxDecoration(color: Color(0xFFECD78B)),
+          child: Stack(
+            children: [
+              const Positioned(
+                left: 120,
+                top: 108,
+                child: Text(
+                  'LOGIN',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 35,
+                    fontFamily: 'Josefin Sans',
+                    fontWeight: FontWeight.w700,
+                    height: 0,
+                  ),
+                ),
+              ),
+Positioned(
+                left: 25,
+                top: 179,
+                child: Container(
+                  width: 311,
+                  height: 302,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage("https://via.placeholder.com/311x302"),
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 63,
+                top: 495,
+                child: Container(
+                  width: 23,
+                  height: 21,
+                  clipBehavior: Clip.antiAlias,
+                  decoration: const BoxDecoration(),
+                  child: const FlutterLogo(),
+                ),
+              ),
+              Positioned(
+                left: 53,
+                top: 203,
+                child: Container(
+                  width: 261,
+                  height: 47,
+                  decoration: ShapeDecoration(
+                    color: const Color(0xFF302A16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                ),
+              ),
+Positioned(
+                left: 53,
+                top: 295,
+                child: Container(
+                  width: 261,
+                  height: 47,
+                  decoration: ShapeDecoration(
+                    color: const Color(0xFF302A16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 106,
+                top: 371,
+                child: Container(
+                  width: 155,
+                  height: 68,
+                  decoration: ShapeDecoration(
+                    color: const Color(0xFF302A16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(35),
+                    ),
+                  ),
+                ),
+              ),
+              const Positioned(
+                left: 63,
+                top: 179,
+                child: Text(
+                  'USERNAME',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 20,
+                    fontFamily: 'Josefin Sans',
+                    fontWeight: FontWeight.w700,
+                    height: 0,
+                  ),
+                ),
+              ),
+              const Positioned(
+                left: 63,
+                top: 264,
+                child: Text(
+                  'PASSWORD',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 20,
+                    fontFamily: 'Josefin Sans',
+                    fontWeight: FontWeight.w700,
+                    height: 0,
+                  ),
+                ),
+              ),
+              const Positioned(
+                left: 133,
+                top: 393,
+                child: Text(
+                  'LOGIN',
+                  style: TextStyle(
+                    color: Color(0xFFECD78B),
+                    fontSize: 30,
+                    fontFamily: 'Josefin Sans',
+                    fontWeight: FontWeight.w700,
+                    height: 0,
+                  ),
+                ),
+              ),
+              const Positioned(
+                left: 99,
+                top: 497,
+                child: SizedBox(
+                  width: 197,
+                  height: 28,
+                  child: Text(
+                    'Continue with Google',
+                    style: TextStyle(
+                      color: Color(0xFFECD78B),
+                      fontSize: 18,
+                      fontFamily: 'Josefin Sans',
+                      fontWeight: FontWeight.w600,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 34,
+                top: 454,
+                child: Container(
+                  width: 305,
+                  decoration: const ShapeDecoration(
+                    shape: RoundedRectangleBorder(
+                      side: BorderSide(
+                        width: 1,
+                        strokeAlign: BorderSide.strokeAlignCenter,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        Container(
+          width: 360,
+          height: 640,
+          clipBehavior: Clip.antiAlias,
+          decoration: const BoxDecoration(color: Color(0xFFECD78B)),
+          child: Stack(
+            children: [
+              Positioned(
+                left: 25,
+                top: 157,
+                child: Container(
+                  width: 311,
+                  height: 326,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage("https://via.placeholder.com/311x326"),
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                ),
+              ),
+              const Positioned(
+                left: -3,
+                top: 134,
+                child: SizedBox(
+                  width: 363,
+                  height: 52,
+                  child: Text(
+                    ' TRANSPORT \nLOGIN',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 30,
+                      fontFamily: 'Josefin Sans',
+                      fontWeight: FontWeight.w700,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 143,
+                top: 525,
+                child: Container(
+                  width: 193,
+                  height: 68,
+                  decoration: ShapeDecoration(
+                    color: const Color(0xFF302A16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                ),
+              ),
+              const Positioned(
+                left: 199,
+                top: 547,
+                child: SizedBox(
+                  width: 192,
+                  height: 24,
+                  child: Text(
+                    '+ADD',
+                    style: TextStyle(
+                      color: Color(0xFFECD78B),
+                      fontSize: 30,
+                      fontFamily: 'Josefin Sans',
+                      fontWeight: FontWeight.w700,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+Container(
+          width: 360,
+          height: 640,
+          clipBehavior: Clip.antiAlias,
+          decoration: const BoxDecoration(color: Color(0xFFECD78B)),
+          child: Stack(
+            children: [
+              Positioned(
+                left: 24,
+                top: 140,
+                child: Container(
+                  width: 311,
+                  height: 326,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage("https://via.placeholder.com/311x326"),
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 102,
+                top: 365,
+                child: Container(
+                  width: 155,
+                  height: 68,
+                  decoration: ShapeDecoration(
+                    color: const Color(0xFF302A16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(35),
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 49,
+                top: 266,
+                child: Container(
+                  width: 261,
+                  height: 47,
+                  decoration: ShapeDecoration(
+                    color: const Color(0xFF302A16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 49,
+                top: 167,
+                child: Container(
+                  width: 261,
+                  height: 47,
+                  decoration: ShapeDecoration(
+                    color: const Color(0xFF302A16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                ),
+              ),
+              const Positioned(
+                left: 49,
+                top: 242,
+                child: SizedBox(
+                  width: 192,
+                  height: 24,
+                  child: Text(
+                    'PASSWORD',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 20,
+                      fontFamily: 'Josefin Sans',
+                      fontWeight: FontWeight.w700,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
+              const Positioned(
+                left: 49,
+                top: 140,
+                child: SizedBox(
+                  width: 286,
+                  height: 24,
+                  child: Text(
+                    'NAME OF YOUR VEHICLE',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 20,
+                      fontFamily: 'Josefin Sans',
+                      fontWeight: FontWeight.w700,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
+              const Positioned(
+                left: 128,
+                top: 387,
+                child: SizedBox(
+                  width: 97,
+                  height: 24,
+                  child: Text(
+                    ' SAVE',
+                    style: TextStyle(
+                      color: Color(0xFFECD78B),
+                      fontSize: 30,
+                      fontFamily: 'Josefin Sans',
+                      fontWeight: FontWeight.w700,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+Container(
+          width: 360,
+          height: 640,
+          clipBehavior: Clip.antiAlias,
+          decoration: const BoxDecoration(color: Color(0xFFECD78B)),
+          child: Stack(
+            children: [
+              Positioned(
+                left: 33,
+                top: 158,
+                child: Container(
+                  width: 298.11,
+                  height: 324.29,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage("https://via.placeholder.com/298x324"),
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                ),
+              ),
+              const Positioned(
+                left: 8,
+                top: 149,
+                child: SizedBox(
+                  width: 347.95,
+                  height: 51.73,
+                  child: Text(
+                    ' TRANSPORT \nLOGIN',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 30,
+                      fontFamily: 'Josefin Sans',
+                      fontWeight: FontWeight.w700,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 158,
+                top: 518,
+                child: SizedBox(
+                  width: 232,
+                  height: 67.64,
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        left: 0,
+                        top: 0,
+                        child: Container(
+                          width: 185,
+                          height: 67.64,
+                          decoration: ShapeDecoration(
+                            color: const Color(0xFF302A16),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                          ),
+                        ),
+                      ),
+                      const Positioned(
+                        left: 47.96,
+                        top: 21.83,
+                        child: SizedBox(
+                          width: 184.04,
+                          height: 23.87,
+                          child: Text(
+                            '+ADD',
+                            style: TextStyle(
+                              color: Color(0xFFECD78B),
+                              fontSize: 30,
+                              fontFamily: 'Josefin Sans',
+                              fontWeight: FontWeight.w700,
+                              height: 0,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 68.39,
+                top: 236.54,
+                child: Container(
+                  width: 250.18,
+                  height: 46.75,
+                  decoration: ShapeDecoration(
+                    color: const Color(0xFF302A16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                ),
+              ),
+              const Positioned(
+                left: 90.44,
+                top: 247.48,
+                child: SizedBox(
+                  width: 184.04,
+                  height: 23.87,
+                  child: Text(
+                    'XXX',
+                    style: TextStyle(
+                      color: Color(0xFFECD78B),
+                      fontSize: 30,
+                      fontFamily: 'Josefin Sans',
+                      fontWeight: FontWeight.w700,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        Container(
+          width: 360,
+          height: 644,
+          clipBehavior: Clip.antiAlias,
+          decoration: const BoxDecoration(color: Color(0xFFECD78B)),
+          child: Stack(
+            children: [
+              Positioned(
+                left: 25,
+                top: 157,
+                child: Container(
+                  width: 311,
+                  height: 326,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage("https://via.placeholder.com/311x326"),
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 81,
+                top: 53,
+                child: Container(
+                  width: 222,
+                  height: 47,
+                  decoration: ShapeDecoration(
+                    color: const Color(0xFF302A16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                ),
+              ),
+              const Positioned(
+                left: 92,
+                top: 64,
+                child: SizedBox(
+                  width: 251,
+                  height: 24,
+                  child: Text(
+                    'XXX DETAILS',
+                    style: TextStyle(
+                      color: Color(0xFFECD78B),
+                      fontSize: 30,
+                      fontFamily: 'Josefin Sans',
+                      fontWeight: FontWeight.w700,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
+              const Positioned(
+                left: 16,
+                top: 118,
+                child: SizedBox(
+                  width: 350,
+                  child: Text.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                          text: 'MODEL:\n\n\nREGISTRATION DETAILS: ',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 15,
+                            fontFamily: 'Josefin Sans',
+                            fontWeight: FontWeight.w700,
+                            height: 0,
+                          ),
+                        ),
+                        TextSpan(
+                          text: 'DD/MM/YYYY\n\n',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 15,
+                            fontFamily: 'Josefin Sans',
+                            fontWeight: FontWeight.w200,
+                            height: 0,
+                          ),
+                        ),
+                        TextSpan(
+                          text: '\nFIRST HAND/SECOND HAND:\n\n\nVIN:\n\n\nPLATE NUMBER: ',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 15,
+                            fontFamily: 'Josefin Sans',
+                            fontWeight: FontWeight.w700,
+                            height: 0,
+                          ),
+                        ),
+                        TextSpan(
+                          text: 'SS-RR-XX-YYYY\n\n',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 15,
+                            fontFamily: 'Josefin Sans',
+                            fontWeight: FontWeight.w200,
+                            height: 0,
+                          ),
+                        ),
+                        TextSpan(
+                          text: '\nDRIVING LICENSE: ',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 15,
+                            fontFamily: 'Josefin Sans',
+                            fontWeight: FontWeight.w700,
+                            height: 0,
+                          ),
+                        ),
+                        TextSpan(
+                          text: 'SS-RRRR-YYYY-XXXXXXX\n\n',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 15,
+                            fontFamily: 'Josefin Sans',
+                            fontWeight: FontWeight.w200,
+                            height: 0,
+                          ),
+                        ),
+                        TextSpan(
+                          text: '\nRC BOOK NUMBER:\n\n\nLAST RENEWAL:\n\n    DRIVING LICENSE: ',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 15,
+                            fontFamily: 'Josefin Sans',
+                            fontWeight: FontWeight.w700,
+                            height: 0,
+                          ),
+                        ),
+                        TextSpan(
+                          text: 'DD/MM/YYYY\n',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 15,
+                            fontFamily: 'Josefin Sans',
+                            fontWeight: FontWeight.w200,
+                            height: 0,
+                          ),
+                        ),
+                        TextSpan(
+                          text: '    RC BOOK: ',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 15,
+                            fontFamily: 'Josefin Sans',
+                            fontWeight: FontWeight.w700,
+                            height: 0,
+                          ),
+                        ),
+TextSpan(
+                          text: 'DD/MM/YYYY\n',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 15,
+                            fontFamily: 'Josefin Sans',
+                            fontWeight: FontWeight.w200,
+                            height: 0,
+                          ),
+                        ),
+                        TextSpan(
+                          text: '\nLAST RENEWAL:\n\n    DRIVING LICENSE: ',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 15,
+                            fontFamily: 'Josefin Sans',
+                            fontWeight: FontWeight.w700,
+                            height: 0,
+                          ),
+                        ),
+                        TextSpan(
+                          text: 'DD/MM/YYYY\n',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 15,
+                            fontFamily: 'Josefin Sans',
+                            fontWeight: FontWeight.w200,
+                            height: 0,
+                          ),
+                        ),
+                        TextSpan(
+                          text: '    RC BOOK: ',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 15,
+                            fontFamily: 'Josefin Sans',
+                            fontWeight: FontWeight.w700,
+                            height: 0,
+                          ),
+                        ),
+                        TextSpan(
+                          text: 'DD/MM/YYYY\n\n',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 15,
+                            fontFamily: 'Josefin Sans',
+                            fontWeight: FontWeight.w200,
+                            height: 0,
+                          ),
+                        ),
+                        TextSpan(
+                          text: '\n\n\n\n\n\n\n\n\n',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 15,
+                            fontFamily: 'Josefin Sans',
+                            fontWeight: FontWeight.w700,
+                            height: 0,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 248,
+                top: 568,
+                child: Container(
+                  width: 88,
+                  height: 42,
+                  decoration: ShapeDecoration(
+                    color: const Color(0xFF302A16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                ),
+              ),
+              const Positioned(
+                left: 257,
+                top: 578,
+                child: SizedBox(
+                  width: 79,
+                  height: 25,
+                  child: Text(
+                    'NEXT',
+                    style: TextStyle(
+                      color: Color(0xFFECD78B),
+                      fontSize: 25,
+                      fontFamily: 'Josefin Sans',
+                      fontWeight: FontWeight.w700,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        Container(
+          width: 360,
+          height: 640,
+          clipBehavior: Clip.antiAlias,
+          decoration: const BoxDecoration(color: Color(0xFFECD78B)),
+          child: Stack(
+            children: [
+              Positioned(
+                left: 5,
+                top: 159,
+                child: Container(
+                  width: 311,
+                  height: 325,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage("https://via.placeholder.com/311x325"),
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 50,
+                top: 359,
+                child: Container(
+                  width: 222,
+                  height: 47,
+                  decoration: ShapeDecoration(
+                    color: const Color(0xFF302A16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                ),
+              ),
+              const Positioned(
+                left: 0,
+                top: 38,
+                child: SizedBox(
+                  width: 321,
+                  height: 517,
+                  child: Text(
+                    'RENEWAL\nUPDATE\n',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Color(0xFF302A16),
+                      fontSize: 30,
+                      fontFamily: 'Josefin Sans',
+                      fontWeight: FontWeight.w700,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 50,
+                top: 177,
+                child: Container(
+                  width: 222,
+                  height: 47,
+                  decoration: ShapeDecoration(
+                    color: const Color(0xFF302A16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 50,
+                top: 268,
+                child: Container(
+                  width: 222,
+                  height: 47,
+                  decoration: ShapeDecoration(
+                    color: const Color(0xFF302A16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                ),
+              ),
+              const Positioned(
+                left: 70,
+                top: 193,
+                child: SizedBox(
+                  width: 312,
+                  height: 24,
+                  child: Text(
+                    'DRIVING LICENSE',
+                    style: TextStyle(
+                      color: Color(0xFFECD78B),
+                      fontSize: 20,
+                      fontFamily: 'Josefin Sans',
+                      fontWeight: FontWeight.w700,
+                      decoration: TextDecoration.underline,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
+              const Positioned(
+                left: 107,
+                top: 284,
+                child: SizedBox(
+                  width: 312,
+                  height: 24,
+                  child: Text(
+                    'RC BOOK',
+                    style: TextStyle(
+                      color: Color(0xFFECD78B),
+                      fontSize: 20,
+                      fontFamily: 'Josefin Sans',
+                      fontWeight: FontWeight.w700,
+                      decoration: TextDecoration.underline,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
+              const Positioned(
+                left: 96,
+                top: 371,
+                child: SizedBox(
+                  width: 312,
+                  height: 24,
+                  child: Text(
+                    'INSURANCE',
+                    style: TextStyle(
+                      color: Color(0xFFECD78B),
+                      fontSize: 20,
+                      fontFamily: 'Josefin Sans',
+                      fontWeight: FontWeight.w700,
+                      decoration: TextDecoration.underline,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 205,
+                top: 555,
+                child: Container(
+                  width: 123,
+                  height: 37,
+                  decoration: ShapeDecoration(
+                    color: const Color(0xFF302A16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                ),
+              ),
+const Positioned(
+                left: 216,
+                top: 562,
+                child: SizedBox(
+                  width: 112,
+                  height: 24,
+                  child: Text(
+                    'UPDATE',
+                    style: TextStyle(
+                      color: Color(0xFFECD78B),
+                      fontSize: 25,
+                      fontFamily: 'Josefin Sans',
+                      fontWeight: FontWeight.w700,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        Container(
+          width: 360,
+          height: 640,
+          padding: const EdgeInsets.only(top: 161, left: 26, right: 23),
+          clipBehavior: Clip.antiAlias,
+          decoration: const BoxDecoration(color: Color(0xFFECD78B)),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.end,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              SizedBox(
+                width: 311,
+                height: 689,
+                child: Stack(
+                  children: [
+                    Positioned(
+                      left: 0,
+                      top: 0,
+                      child: Container(
+                        width: 311,
+                        height: 325,
+                        decoration: const BoxDecoration(
+                          image: DecorationImage(
+                            image: NetworkImage("https://via.placeholder.com/311x325"),
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                      ),
+                    ),
+                    const Positioned(
+                      left: 0,
+                      top: 201,
+                      child: SizedBox(
+                        width: 311,
+                        height: 488,
+                        child: Text(
+                          'YOUR PROGRESS HAS BEEN UPDATED!!!',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 30,
+                            fontFamily: 'Josefin Sans',
+                            fontWeight: FontWeight.w700,
+                            height: 0,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      left: 110,
+                      top: 52,
+                      child: Container(
+                        width: 91,
+                        height: 91,
+                        decoration: const ShapeDecoration(
+                          color: Color(0xFF4CAF50),
+                          shape: OvalBorder(),
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      left: 111,
+                      top: 52,
+                      child: Container(
+                        width: 92,
+                        height: 91,
+                        padding: const EdgeInsets.only(
+                          top: 21.20,
+                          left: 13.42,
+                          right: 11.50,
+                          bottom: 18.96,
+                        ),
+                        clipBehavior: Clip.antiAlias,
+                        decoration: const BoxDecoration(),
+                        child: const Row(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+        Container(
+          width: 360,
+          height: 640,
+          clipBehavior: Clip.antiAlias,
+          decoration: const BoxDecoration(color: Color(0xFFECD78B)),
+          child: Stack(
+            children: [
+              Positioned(
+                left: 25,
+                top: 157,
+                child: Container(
+                  width: 311,
+                  height: 326,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage("https://via.placeholder.com/311x326"),
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 71,
+                top: 41,
+                child: Container(
+                  width: 222,
+                  height: 47,
+                  decoration: ShapeDecoration(
+                    color: const Color(0xFF302A16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                ),
+              ),
+              const Positioned(
+                left: 79,
+                top: 52,
+                child: SizedBox(
+                  width: 251,
+                  height: 24,
+                  child: Text(
+                    'XXX DETAILS',
+                    style: TextStyle(
+                      color: Color(0xFFECD78B),
+                      fontSize: 30,
+                      fontFamily: 'Josefin Sans',
+                      fontWeight: FontWeight.w700,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
+              const Positioned(
+                left: 13,
+                top: 114,
+                child: SizedBox(
+                  width: 350,
+                  child: Text.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                          text: '\n',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 15,
+                            fontFamily: 'Josefin Sans',
+                            fontWeight: FontWeight.w200,
+                            height: 0,
+                          ),
+                        ),
+                        TextSpan(
+                          text: '\nINSURANCE DETAILS\n\n    PROVIDED BY:\n\n\n    POLICY NUMBER:\n\n\n    POLICY COVERAGE:\n\n\n    POLICY EXPIRATION DATE: ',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 15,
+                            fontFamily: 'Josefin Sans',
+                            fontWeight: FontWeight.w700,
+                            height: 0,
+                          ),
+                        ),
+                        TextSpan(
+                          text: 'DD/MM/YYYY\n\n\n',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 15,
+                            fontFamily: 'Josefin Sans',
+                            fontWeight: FontWeight.w200,
+                            height: 0,
+                          ),
+                        ),
+
+TextSpan(
+                          text: '    INSURANCE CLAIMED HISTORY:\n\n\nLOAN AMOUNT FOR YOUR VEHICLE:\n\n\nODOMETER READING:\n\n\nLAST SERVICE DATE:\n\n\n\n\n\n\n',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 15,
+                            fontFamily: 'Josefin Sans',
+                            fontWeight: FontWeight.w700,
+                            height: 0,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 248,
+                top: 564,
+                child: Container(
+                  width: 88,
+                  height: 39,
+                  decoration: ShapeDecoration(
+                    color: const Color(0xFF302A16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                ),
+              ),
+              const Positioned(
+                left: 261,
+                top: 573,
+                child: SizedBox(
+                  width: 69,
+                  height: 24,
+                  child: Text(
+                    'SAVE',
+                    style: TextStyle(
+                      color: Color(0xFFECD78B),
+                      fontSize: 25,
+                      fontFamily: 'Josefin Sans',
+                      fontWeight: FontWeight.w700,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        Container(
+          width: 24,
+          height: 24,
+          clipBehavior: Clip.antiAlias,
+          decoration: const BoxDecoration(),
+        ),
+        Container(
+          width: 24,
+          height: 24,
+          clipBehavior: Clip.antiAlias,
+          decoration: const BoxDecoration(),
+        ),
+        Container(
+          width: 360,
+          height: 640,
+          clipBehavior: Clip.antiAlias,
+          decoration: const BoxDecoration(color: Color(0xFFECD78B)),
+          child: Stack(
+            children: [
+              Positioned(
+                left: 25,
+                top: 157,
+                child: Container(
+                  width: 311,
+                  height: 326,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage("https://via.placeholder.com/311x326"),
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                ),
+              ),
+              const Positioned(
+                left: 19,
+                top: 113,
+                child: SizedBox(
+                  width: 323,
+                  height: 36,
+                  child: Text(
+                    'AUTHENTICATION',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 35,
+                      fontFamily: 'Josefin Sans',
+                      fontWeight: FontWeight.w700,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
+              const Positioned(
+                left: 49,
+                top: 269,
+                child: Text(
+                  'ENTER YOUR PIN:',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 20,
+                    fontFamily: 'Josefin Sans',
+                    fontWeight: FontWeight.w700,
+                    height: 0,
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 49,
+                top: 307,
+                child: Container(
+                  width: 261,
+                  height: 47,
+                  decoration: ShapeDecoration(
+                    color: const Color(0xFF302A16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+
